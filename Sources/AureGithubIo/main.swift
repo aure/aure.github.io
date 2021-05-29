@@ -27,4 +27,5 @@ struct AureGithubIo: Website {
 try AureGithubIo().publish(using: [
     .generateHTML(withTheme: .foundation),
     .deploy(using: .git("aure/aure.github.io", branch: "main"))
+    
 ])
